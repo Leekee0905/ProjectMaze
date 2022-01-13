@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviourPunCallbacks
     private float rotationSpeed = 500.0f;
 
     [SerializeField] Item[] items;
-    [SerializeField] GameObject cameraHolder;
+
     public int itemIndex;
     public int previousItemIndex = -1; //기본 아이템 값 없도록
 
