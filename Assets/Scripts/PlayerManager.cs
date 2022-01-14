@@ -31,5 +31,9 @@ public class PlayerManager : MonoBehaviour
         //포톤 뷰를 가지고 있는 새로운 물체 만들어주기
     }
 
-
+    public void Die()
+    {
+        PhotonNetwork.Destroy(controller);
+        //재생성해야함
+    }
 }

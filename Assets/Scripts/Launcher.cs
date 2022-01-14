@@ -22,6 +22,7 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아들이기
     void Awake()
     {
         Instance = this;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     void Start()
@@ -119,5 +120,11 @@ public class Launcher : MonoBehaviourPunCallbacks//다른 포톤 반응 받아들이기
     public override void OnPlayerEnteredRoom(Player newPlayer) //다른 플레이어가 방에 들어오면 작동
     {
         Instantiate(playerListItemPrefab, playerListContent).GetComponent<PlayerListItem>().SetUp(newPlayer); //Instatiate로 prefab을 playerlistcontent위치에 만들어주고 그 프리펩 이름을 받아서 표시
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit Game");
     }
 }
