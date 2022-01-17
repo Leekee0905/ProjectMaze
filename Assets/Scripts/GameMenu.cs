@@ -16,6 +16,7 @@ public class GameMenu : MonoBehaviour
     {
         menuPanel.SetActive(false);
     }
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))

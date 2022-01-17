@@ -4,6 +4,8 @@ using UnityEngine;
 using Photon.Pun;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using Photon.Realtime;
+using TMPro;
+
 
 public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 {
@@ -20,16 +22,15 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 
     const float maxHealth = 100f;
     float currentHealth = maxHealth;
-    float verticalLookRotation;
     public int itemIndex;
     public int previousItemIndex = -1; //기본 아이템 값 없도록
+    public TMP_Text healthText;
 
     bool grounded;
     private Transform playerTr;
 
     Rigidbody rb;
     PhotonView PV;
-
     PlayerManager playerManager;
 
     void Awake()
@@ -56,6 +57,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
         if (!PV.IsMine)
             return;
         Move();
+        healthText.text = ("Current Health: " + currentHealth.ToString());
         for(int i = 0; i < items.Length; i++)
         {
             if(Input.GetKeyDown((i+1).ToString()))
@@ -178,11 +180,19 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
         if(currentHealth <= 0)
         {
             Die();
+            currentHealth = maxHealth;
+            Respawn();
         }
     }
 
     void Die()
     {
         playerManager.Die();
+    }
+
+    [PunRPC]
+    void Respawn()
+    {
+        playerManager.CreateController();
     }
 }

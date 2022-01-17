@@ -672,6 +672,7 @@ MonoBehaviour:
   mouseSensitivity: 0.5
   itemIndex: 0
   previousItemIndex: -1
+  healthText: {fileID: 871584194216152555, guid: ac7c7353c5d8ec245b923f5e6f362c1e, type: 3}
 --- !u!114 &3974116407651132311
 MonoBehaviour:
   m_ObjectHideFlags: 0

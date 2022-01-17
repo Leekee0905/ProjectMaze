@@ -21,7 +21,7 @@ public class PlayerManager : MonoBehaviour
             CreateController();//플레이어 컨트롤러 붙여준다. 
         }
     }
-    void CreateController()//플레이어 컨트롤러 만들기
+    public void CreateController()//플레이어 컨트롤러 만들기
     {
         Transform spawnpoint = SpawnManager.Instance.GetSpawnpoint();
         //스폰 매니저에 있는 랜덤 스폰 포인트 받기

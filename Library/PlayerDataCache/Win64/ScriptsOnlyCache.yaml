@@ -119,21 +119,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3760}
     - Class: 114
-      Script: {instanceID: 3960}
+      Script: {instanceID: 3962}
     - Class: 114
-      Script: {instanceID: 3980}
+      Script: {instanceID: 3982}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 4000}
     - Class: 114
-      Script: {instanceID: 4080}
-    - Class: 114
-      Script: {instanceID: 4284}
+      Script: {instanceID: 4082}
     - Class: 114
       Script: {instanceID: 4286}
     - Class: 114
-      Script: {instanceID: 4342}
+      Script: {instanceID: 4288}
     - Class: 114
-      Script: {instanceID: 4418}
+      Script: {instanceID: 4344}
+    - Class: 114
+      Script: {instanceID: 4420}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -210,9 +210,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3248}
     - Class: 114
-      Script: {instanceID: 4070}
+      Script: {instanceID: 3856}
     - Class: 114
-      Script: {instanceID: 97754}
+      Script: {instanceID: 4072}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -504,7 +504,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: df43f5ace63b639216faa2795be2f2b7
+      Hash: 98128ea8a02c13d1735d4def6e65e3b5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -792,6 +792,12 @@ ScriptsOnlyBuild:
     className: ButtonInsideScrollList
   - hash:
       serializedVersion: 2
+      Hash: 4d62a887a9d900acd13e3a9c447dba84
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameMenu
+  - hash:
+      serializedVersion: 2
       Hash: ed73a38a6df650fdeeacac5cdb11df48
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -942,6 +948,12 @@ ScriptsOnlyBuild:
     className: PunTurnManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameController
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -976,14 +988,8 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: PhotonTeamsManager
-  - hash:
-      serializedVersion: 2
-      Hash: 4d62a887a9d900acd13e3a9c447dba84
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameMenu
   platform: 19
   scenePathNames:
   - Assets/Scenes/Lobby.unity
   - Assets/Scenes/Maze.unity
-  playerPath: C:/Users/32172906/ProjectMaze/ProjectMaze.exe
+  playerPath: D:/UnityProject/ProjectMaze/ProjectMaze.exe
